@@ -1,10 +1,19 @@
+#  _________                              __________                 __                 __   
+# /   _____/ ______________  __ __________\______   \ ____   _______/  |______ ________/  |_ 
+# \_____  \_/ __ \_  __ \  \/ // __ \_  __ \       _// __ \ /  ___/\   __\__  \\_  __ \   __\
+# /        \  ___/|  | \/\   /\  ___/|  | \/    |   \  ___/ \___ \  |  |  / __ \|  | \/|  |  
+#/_______  /\___  >__|    \_/  \___  >__|  |____|_  /\___  >____  > |__| (____  /__|   |__|  
+#        \/     \/                 \/             \/     \/     \/            \/             
 #ServerRestart - by DroidVengeance
 	
 	
-command /serverrestart <text>:
+command /serverrestart [<text>]:
 	permission: serverrestart.admin
 	aliases: /sr
 	trigger:
+		if arg 1 is not set:
+			send "&4[&cSR&4] &cPlease specify a reason for restarting!"
+			stop
 		set {_message} to arg 1
 		broadcast "&4&m-----------------------------------------------------"
 		broadcast "&c&lServer restarting in &b1 &c&lminute!"
