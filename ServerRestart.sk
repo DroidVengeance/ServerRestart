@@ -1,0 +1,58 @@
+#ServerRestart - by DroidVengeance
+	
+	
+command /serverrestart <text>:
+	permission: serverrestart.admin
+	aliases: /sr
+	trigger:
+		set {_message} to arg 1
+		broadcast "&4&m-----------------------------------------------------"
+		broadcast "&c&lServer restarting in &b1 &c&lminute!"
+		broadcast "&cFor: %{_message}%"
+		broadcast "&4&m-----------------------------------------------------"
+		play sound "BLOCK_NOTE_PLING" to player with volume 1 and pitch 2
+		wait 54 seconds
+		broadcast "&4&m-----------------------------------------------------"
+		broadcast "&c&lServer restarting in &b6 &c&lseconds!"
+		broadcast "&cFor: %{_message}%"
+		broadcast "&4&m-----------------------------------------------------"
+		play sound "BLOCK_NOTE_PLING" to player with volume 1 and pitch 2
+		wait 1.5 second
+		broadcast "&4&m-----------------------------------------------------"
+		broadcast "&c&lServer restarting in &b5 &c&lseconds!"
+		broadcast "&cFor: %{_message}%"
+		broadcast "&4&m-----------------------------------------------------"
+		play sound "BLOCK_NOTE_PLING" to player with volume 1 and pitch 2
+		wait 1.5 second
+		broadcast "&4&m-----------------------------------------------------"
+		broadcast "&c&lServer restarting in &b4 &c&lseconds!"
+		broadcast "&cFor: %{_message}%"
+		broadcast "&4&m-----------------------------------------------------"
+		play sound "BLOCK_NOTE_PLING" to player with volume 1 and pitch 2
+		wait 1.5 second
+		broadcast "&4&m-----------------------------------------------------"
+		broadcast "&c&lServer restarting in &b3 &c&lseconds!"
+		broadcast "&cFor: %{_message}%"
+		broadcast "&4&m-----------------------------------------------------"
+		play sound "BLOCK_NOTE_PLING" to player with volume 1 and pitch 2
+		wait 1.5 second
+		broadcast "&4&m-----------------------------------------------------"
+		broadcast "&c&lServer restarting in &b2 &c&lseconds!"
+		broadcast "&cFor: %{_message}%"
+		broadcast "&4&m-----------------------------------------------------"
+		play sound "BLOCK_NOTE_PLING" to player with volume 1 and pitch 2
+		wait 1.5 second
+		broadcast "&4&m-----------------------------------------------------"
+		broadcast "&c&lServer restarting in &b1 &c&lsecond!"
+		broadcast "&cFor: %{_message}%"
+		broadcast "&4&m-----------------------------------------------------"
+		play sound "BLOCK_NOTE_PLING" to player with volume 1 and pitch 2
+		execute console command "save-all"
+		wait 1.5 second
+		broadcast "&4&m-----------------------------------------------------"
+		broadcast "&c&lServer restarting NOW"
+		broadcast "&4&m-----------------------------------------------------"
+		play sound "BLOCK_NOTE_PLING" to player with volume 1 and pitch 2
+		wait 5 seconds
+		send "Restarting for: %{_message}%" to console
+		execute console command "stop"
