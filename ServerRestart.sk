@@ -5,7 +5,14 @@
 #/_______  /\___  >__|    \_/  \___  >__|  |____|_  /\___  >____  > |__| (____  /__|   |__|  
 #        \/     \/                 \/             \/     \/     \/            \/             
 #ServerRestart - by DroidVengeance
-	
+
+On script load:
+	send "  _________                              __________                 __                 __   " to the console
+	send " /   _____/ ______________  __ __________\______   \ ____   _______/  |______ ________/  |_ " to the console
+	send " \_____  \_/ __ \_  __ \  \/ // __ \_  __ \       _// __ \ /  ___/\   __\__  \\_  __ \   __\" to the console
+	send " /        \  ___/|  | \/\   /\  ___/|  | \/    |   \  ___/ \___ \  |  |  / __ \|  | \/|  |  " to the console
+	send "/_______  /\___  >__|    \_/  \___  >__|  |____|_  /\___  >____  > |__| (____  /__|   |__|  " to the console
+	send "        \/     \/                 \/             \/     \/     \/            \/             " to the console
 	
 command /serverrestart [<text>]:
 	permission: serverrestart.admin
